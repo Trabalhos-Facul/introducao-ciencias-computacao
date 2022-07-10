@@ -30,10 +30,16 @@ def main():
 
                     if option_chosen in menu_price_valid_options:
                         if option_chosen == menu_price_valid_options[0]:
-                            if input_values:
-                                input_values.insert(0, input())
-                            else:
-                                input_values.append(input())
+                            print("Digite o valor do item e precione a tecla Enter para adicionar um item a serie")
+                            print("Ou Digite 'q' e precione a tecla Enter para sair: ")
+
+                            price = str(input().strip())
+                            while price != 'q':
+                                if input_values:
+                                    input_values.insert(0, price)
+                                else:
+                                    input_values.append(price)
+                                price = str(input().strip())
                             return main()
 
                         elif option_chosen == menu_price_valid_options[1]:
