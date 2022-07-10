@@ -59,7 +59,7 @@ def long_average():
 
 
 def print_output(data_values, data_short, data_long, trend):
-    print("Cotacao      MM Curta     MM Longa     Tendencia")
+    print("  Cotacao      MM Curta    MM Longa    Tendencia")
     for i in range(len(data_values)-1, -1, -1):
         if data_short[i]:
             short_print = f'{data_short[i]:.4f}'
