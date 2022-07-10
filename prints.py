@@ -56,3 +56,27 @@ def short_average():
 def long_average():
     long_average = "Digite o valor da Media Movel Longa: "
     print(long_average)
+
+
+def print_output(data_values, data_short, data_long, trend):
+    print("Cotacao      MM Curta     MM Longa     Tendencia")
+    for i in range(len(data_values)-1, -1, -1):
+        if data_short[i]:
+            short_print = f'{data_short[i]:.4f}'
+        else:
+            short_print = '------'
+
+        if data_long[i]:
+            long_print = f'{data_long[i]:.4f}'
+        else:
+            long_print = '------'
+
+        if i < len(trend):
+            if trend[i]:
+                trend_print = trend[i]
+            else:
+                trend_print = '------'
+        else:
+            trend_print = '------'
+
+        print(f"   {data_values[i]:.4f}      {short_print}      {long_print}      {trend_print}")
