@@ -94,9 +94,7 @@ def main():
 
         last_try = i == MAX_INVALID_VALUES - 1
 
-        if not last_try:
-            print(f"ainda restam {MAX_INVALID_VALUES-i-1} tentativas")
-        else:
+        if last_try:
             print("Limite maximo de tentativas falhas alcancado")
     return True
 
