@@ -95,10 +95,8 @@ def main():
 
                     trend = output_generator.trend(difference)
 
-                    print(data_values)
-                    print(data_short)
-                    print(data_long)
-                    print(trend)
+                    prints.print_output(data_values, data_short, data_long, trend)
+
                 else:
                     print("Nenhum valor na serie")
 
