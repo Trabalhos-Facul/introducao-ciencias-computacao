@@ -11,3 +11,5 @@
 ## Saída do programa:
 
 - Medias Moveis e Tendência calculados para cada dado na serie de entrada
+
+Padrões de Commits inspirados na [coala API](https://api.coala.io/en/latest/Developers/Writing_Good_Commits.html)
