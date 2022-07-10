@@ -83,19 +83,24 @@ def main():
                     print(f"Valor invalido")
 
             elif option_chosen == menu_start_valid_options[2]:
-                data_values = [float(x) for x in input_values]
 
-                data_short = output_generator.average_in_period(data_values, sort_average)
-                data_long = output_generator.average_in_period(data_values, long_average)
+                if input_values:
 
-                difference = output_generator.get_difference_sign(data_short, data_long)
+                    data_values = [float(x) for x in input_values]
 
-                trend = output_generator.trend(difference)
+                    data_short = output_generator.average_in_period(data_values, sort_average)
+                    data_long = output_generator.average_in_period(data_values, long_average)
 
-                print(data_values)
-                print(data_short)
-                print(data_long)
-                print(trend)
+                    difference = output_generator.get_difference_sign(data_short, data_long)
+
+                    trend = output_generator.trend(difference)
+
+                    print(data_values)
+                    print(data_short)
+                    print(data_long)
+                    print(trend)
+                else:
+                    print("Nenhum valor na serie")
 
                 return main()
 
