@@ -45,7 +45,7 @@ def main():
                                     price = str(input().strip())
                                 else:
                                     print("Valor invalido, tente novamente: ")
-                                    price = str(input())
+                                    price = str(input().strip())
                             return main()
 
                         elif option_chosen == menu_price_valid_options[1]:
