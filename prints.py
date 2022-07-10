@@ -11,6 +11,7 @@ def start_menu():
         [0] Sair do Programa
         """
     print(menu_message)
+    ask_for_choose()
     return menu_items
 
 
@@ -24,6 +25,7 @@ def price_menu():
         [0] Voltar para Menu 
     """
     print(menu_message)
+    ask_for_choose()
     return menu_items
 
 
@@ -39,6 +41,11 @@ def average_menu():
     """
     print(menu_message)
     return menu_items
+
+
+def ask_for_choose():
+    choose = "Digite o numero da opcao desejada: "
+    print(choose)
 
 
 def short_average():
