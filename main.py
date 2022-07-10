@@ -30,8 +30,8 @@ def main():
 
                     if option_chosen in menu_price_valid_options:
                         if option_chosen == menu_price_valid_options[0]:
-                            print("Digite o valor do item e precione a tecla Enter para adicionar um item a serie")
-                            print("Ou Digite 'q' e precione a tecla Enter para sair: ")
+                            print("Digite o valor do item e pressione a tecla Enter para adicionar um item a serie")
+                            print("Ou Digite 'q' e pressione a tecla Enter para sair: ")
 
                             price = str(input().strip())
                             while price != 'q':
