@@ -5,9 +5,9 @@
 ## Entrada do usuário:
 
 - Serie de dados
-- Valor da média movel curta
+- Valor da média movel Curta
 - Valor da média movel Longa
 
 ## Saída do programa:
 
-- Medias Moveis e Tendencia calculados para cada dado na serie de entrada
+- Medias Moveis e Tendência calculados para cada dado na serie de entrada
