@@ -1,5 +1,6 @@
 import prints
 import output_generator
+import validator
 
 input_values = []
 
@@ -34,12 +35,17 @@ def main():
                             print("Ou Digite 'q' e pressione a tecla Enter para sair: ")
 
                             price = str(input().strip())
+
                             while price != 'q':
-                                if input_values:
-                                    input_values.insert(0, price)
+                                if validator.is_float(price):
+                                    if input_values:
+                                        input_values.insert(0, price)
+                                    else:
+                                        input_values.append(price)
+                                    price = str(input().strip())
                                 else:
-                                    input_values.append(price)
-                                price = str(input().strip())
+                                    print("Valor invalido, tente novamente: ")
+                                    price = str(input())
                             return main()
 
                         elif option_chosen == menu_price_valid_options[1]:
