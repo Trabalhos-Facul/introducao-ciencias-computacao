@@ -2,6 +2,8 @@
 
 ## Fornece uma análise de tendência (Alta, Queda, Constante) apartir de uma série de dados inserida pelo usuário
 
+!![Gif Demonstracao](img/resultado.gif)
+
 ## Entrada do usuário:
 
 - Serie de dados
@@ -26,7 +28,7 @@ Padrões de Commits inspirados na [coala API](https://api.coala.io/en/latest/Dev
 
 Ao iniciar o programa você encontrará o seguinte menu:
 
-![Menu inicial]()
+![Menu inicial](img/menu-principal.png)
 
 Queremos começar cadastrando uma Serie de dados, 
 então vamos selecionar a opção "Gerenciar Serie".
@@ -34,7 +36,7 @@ Para Selecionar a Opção digite ``1`` e pressione a tecla ```Enter```
 
 Será exibido no terminal outro menu:
 
-![Menu Gerenciar Serie]()
+![Menu Gerenciar Serie](img/menu-serie.png)
 
 Para inserir os dados da série vamos selecione a opção 'Adicionar itens'.
 Selecione essa opção digitando ``1`` seguido da tecla ```Enter```
@@ -70,7 +72,7 @@ digitando ```2``` seguido por ```Enter```
 
 Será exibido o menu:
 
-![Menu Medias]()
+![Menu Medias](img/menu-medias.png)
 
 Nesse exemplo vamos configurar a Média Movel Curta com o valor 3 
 e a Média Movel Longa com 5.
@@ -88,4 +90,4 @@ No menu inicial, digite a opção correspondente a ```Gerar Saida```
 
 Seguindo os passos anteriores teremos como resultado:
 
-![Resultado Analise]()
+![Resultado Analise](img/analise.png)
