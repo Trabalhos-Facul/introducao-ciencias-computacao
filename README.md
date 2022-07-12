@@ -2,7 +2,7 @@
 
 ## Fornece uma análise de tendência (Alta, Queda, Constante) apartir de uma série de dados inserida pelo usuário
 
-!![Gif Demonstracao](img/resultado.gif)
+![Gif Demonstracao](img/resultado.gif)
 
 ## Entrada do usuário:
 
