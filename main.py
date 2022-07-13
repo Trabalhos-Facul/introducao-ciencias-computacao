@@ -53,7 +53,14 @@ def main():
                             return main()
 
                         elif option_chosen == menu_price_valid_options[2]:
-                            input_values.pop(int(input()))
+                            value_to_delete = input()
+
+                            if validator.is_int(value_to_delete):
+                                if 0 <= int(value_to_delete) < len(input_values):
+                                    del input_values[int(value_to_delete)]
+                                else:
+                                    print("Posicao invalida")
+
                             return main()
 
                         else:
