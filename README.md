@@ -62,6 +62,18 @@ deverão ser inseridos usando ponto ```.``` ao invés da virgula ```,```
 caso contrário o item não será cadastrado e 
 será exibido na tela ```Valor invalido, tente novamente: ```
 
+Obs: Os primeiros Valores digitados são considerados os valores mais antigos da serie.
+Por isso a digitação da serie deve seguir a ordem:
+
+```
+Valores Antigos
+      
+      |
+      v
+      
+Valores Recentes
+```
+
 Para Sair do Modo de Cadastro da Serie, 
 digite ```q``` seguido por ```Enter```
 
