@@ -49,7 +49,7 @@ def main():
                             return main()
 
                         elif option_chosen == menu_price_valid_options[1]:
-                            print(input_values)
+                            prints.current_series(input_values)
                             return main()
 
                         elif option_chosen == menu_price_valid_options[2]:
