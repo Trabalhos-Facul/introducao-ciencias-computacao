@@ -58,7 +58,7 @@ def long_average():
     print(long_average)
 
 
-def actual_series(serie):
+def current_series(serie):
     print("Serie atual: ")
     for i, s in enumerate(serie):
         print(f"Posicao {i} - {s}")
