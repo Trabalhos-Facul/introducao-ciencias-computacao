@@ -1,6 +1,29 @@
 from numpy import sign
 
 
+def moving_average(price, day):
+    if day <= 0 or day > len(price):
+        return None
+
+    total = 0
+
+    for i in range(0, day):
+        total += price[i]
+
+    value = total / day
+
+    return value
+
+
+def average_in_period(price_value, average_day):
+    average_calculated = []
+    for i in range(len(price_value)):
+        average_item = moving_average(price_value[i:], average_day)
+        average_calculated.append(average_item)
+
+    return average_calculated
+
+
 def get_difference_sign(short, long):
     difference = []
 
@@ -41,24 +64,3 @@ def trend(difference):
     return trend_list
 
 
-def moving_average(price, day):
-    if day <= 0 or day > len(price):
-        return None
-
-    total = 0
-
-    for i in range(0, day):
-        total += price[i]
-
-    value = total / day
-
-    return value
-
-
-def average_in_period(price_value, average_day):
-    average_calculated = []
-    for i in range(len(price_value)):
-        average_item = moving_average(price_value[i:], average_day)
-        average_calculated.append(average_item)
-
-    return average_calculated
