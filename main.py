@@ -78,12 +78,25 @@ def main():
 
                     if option_chosen in menu_average_valid_options:
                         if option_chosen == menu_average_valid_options[0]:
-                            sort_average = int(input("Digite o valor da media curta: "))
-                            return main()
+
+                            input_to_short_average =  input("Digite o valor da media curta: ")
+
+                            if validator.is_int(input_to_short_average):
+                                sort_average = int(input_to_short_average)
+                                return main()
+                            else:
+                                print("Valor para media invalido")
+                                return main()
 
                         elif option_chosen == menu_average_valid_options[1]:
-                            long_average = int(input("Digite o valor da media longa: "))
-                            return main()
+                            input_to_long_average = input("Digite o valor da media longa: ")
+
+                            if validator.is_int(input_to_long_average):
+                                long_average = int(input_to_long_average)
+                                return main()
+                            else:
+                                print("Valor para media invalido")
+                                return main()
                         else:
                             return main()
 
