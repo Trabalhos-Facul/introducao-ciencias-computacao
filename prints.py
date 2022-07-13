@@ -58,6 +58,12 @@ def long_average():
     print(long_average)
 
 
+def actual_series(serie):
+    print("Serie atual: ")
+    for i, s in enumerate(serie):
+        print(f"Posicao {i} - {s}")
+
+
 def print_output(data_values, data_short, data_long, trend):
     print("  Cotacao      MM Curta    MM Longa    Tendencia")
     for i in range(len(data_values)-1, -1, -1):
