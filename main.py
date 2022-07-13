@@ -4,14 +4,14 @@ import validator
 
 input_values = []
 
-sort_average = 1
+short_average = 1
 long_average = 1
 
 MAX_INVALID_VALUES = 10
 
 
 def main():
-    global sort_average, long_average
+    global short_average, long_average
 
     menu_start_valid_options = prints.start_menu()
 
@@ -82,7 +82,7 @@ def main():
                             input_to_short_average =  input("Digite o valor da media curta: ")
 
                             if validator.is_int(input_to_short_average):
-                                sort_average = int(input_to_short_average)
+                                short_average = int(input_to_short_average)
                                 return main()
                             else:
                                 print("Valor para media invalido")
@@ -108,7 +108,7 @@ def main():
 
                     data_values = [float(x) for x in input_values]
 
-                    data_short = output_generator.average_in_period(data_values, sort_average)
+                    data_short = output_generator.average_in_period(data_values, short_average)
                     data_long = output_generator.average_in_period(data_values, long_average)
 
                     difference = output_generator.get_difference_sign(data_short, data_long)
